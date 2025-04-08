@@ -1,5 +1,5 @@
 // Placeholder for auth.js
-const baseUrl = 'http://localhost:5000/api/auth';
+const baseUrl = 'https://finance-backend-h3v6.onrender.com/api/auth';
 
 if (document.getElementById('signupForm')) {
     document.getElementById('signupForm').addEventListener('submit', async (e) => {

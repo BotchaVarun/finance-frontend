@@ -1,5 +1,5 @@
 // Placeholder for dashboard.js
-const apiUrl = 'http://localhost:5000/api/transactions';
+const apiUrl = 'https://finance-backend-h3v6.onrender.com/api/transactions';
 const userName = localStorage.getItem('userName');
 const token = localStorage.getItem('token');
 

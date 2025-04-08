@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   async function loadReportData() {
     try {
-      const res = await fetch(`http://localhost:5000/api/transactions/${userId}`);
+      const res = await fetch(`https://finance-backend-h3v6.onrender.com/api/transactions/${userId}`);
       const transactions = await res.json();
 
       let totalIncome = 0;
