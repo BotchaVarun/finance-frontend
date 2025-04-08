@@ -46,7 +46,7 @@
 const userId = JSON.parse(atob(token.split('.')[1])).userId;
 
 async function loadAllTransactions() {
-  const res = await fetch(`http://localhost:5000/api/transactions/${userId}`);
+  const res = await fetch(`https://finance-backend-h3v6.onrender.com/api/transactions/${userId}`);
   const data = await res.json();
 
   const tbody = document.getElementById("transactionBody");
