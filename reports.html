@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Financial Report</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/reports.css" />
+</head>
+<body>
+  <aside class="sidebar">
+    <h2>Menu</h2>
+    <ul>
+      <li id="signInLink"><a href="signup.html">Sign In</a></li>
+      <li><a href="dashboard.html#transactionForm">Add Transaction</a></li>
+      <li><a href="history.html">View History</a></li>
+      <li><a href="reports.html">View Reports</a></li>
+      <li><a href="analytics.html">View Analytics</a></li>
+      <li><button onclick="logout()" class="logout-btn">Logout</button></li>
+    </ul>
+  </aside>
+
+  <div class="main-content">
+    <div class="container">
+      <h2 class="section-title">Financial Summary</h2>
+
+      <div class="summary-cards">
+        <div class="summary-card income">
+          <h4>Total Income</h4>
+          <p id="reportIncome">₹0</p>
+        </div>
+        <div class="summary-card expenses">
+          <h4>Total Expenses</h4>
+          <p id="reportExpenses">₹0</p>
+        </div>
+        <div class="summary-card savings">
+          <h4>Net Savings</h4>
+          <p id="reportSavings">₹0</p>
+        </div>
+      </div>
+
+      <div class="insights-section">
+        <button class="btn-insight" id="generateInsightsBtn">Generate AI Insights</button>
+        <div id="insightsContainer" class="insight-box d-none"></div>
+      </div>
+    </div>
+  </div>
+  <script src="js/logout.js"></script>
+  <script src="js/insight.js"></script>
+  <script src="js/report.js"></script>
+</body>
+</html>
